@@ -166,6 +166,10 @@ public class Point2D implements Serializable, Cloneable
     return new Point2I((int) Math.round(x), (int) Math.round(y));
   }
 
+  public Point2I toPoint2I() {return new Point2I((int)x,(int)y);}
+  public Point2I i() {return toPoint2I();}
+  public Point2I ir() {return round();}
+
   /**
    * Compresses to a magnitude of 1.
    */

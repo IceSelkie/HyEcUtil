@@ -141,6 +141,9 @@ public class Vector2I
     return ((loc.x >= x1 && loc.x <= x2) || (loc.x >= x2 && loc.x <= x1)) && ((loc.y >= y1 && loc.y <= y2) || (loc.y >= y2 && loc.y <= y1));
   }
 
+  public Vector2D toVector2D() {return new Vector2D(x1,y1,x2,y2);}
+  public Vector2D d() {return toVector2D();}
+
   public Vector2I clone()
   {
     return new Vector2I(x1, y1, x2, y2);

@@ -179,6 +179,9 @@ public class Point3I implements Serializable, Cloneable
     return new Point3I(this.getX() + x, this.getY() + y, this.getZ() + z);
   }
 
+  public Point3D toPoint3D() {return new Point3D(x,y,z);}
+  public Point3D d() {return toPoint3D();}
+
   /**
    * Creates a new object of the same class and with the
    * same contents as this object.

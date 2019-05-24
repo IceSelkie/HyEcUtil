@@ -143,6 +143,11 @@ public class Vector2D
     return ((loc.x >= x1 && loc.x <= x2) || (loc.x >= x2 && loc.x <= x1)) && ((loc.y >= y1 && loc.y <= y2) || (loc.y >= y2 && loc.y <= y1));
   }
 
+  public Vector2I toVector2I() {return new Vector2I((int)x1,(int)y1,(int)x2,(int)y2);}
+  public Vector2I round() {return new Vector2I((int)Math.round(x1),(int)Math.round(y1),(int)Math.round(x2),(int)Math.round(y2));}
+  public Vector2I i() {return toVector2I();}
+  public Vector2I ir() {return round();}
+
   public Vector2D clone()
   {
     return new Vector2D(x1, y1, x2, y2);

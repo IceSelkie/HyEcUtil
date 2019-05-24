@@ -185,6 +185,10 @@ public class Point2I implements Serializable, Cloneable
     return x >= 0 && y >= 0;
   }
 
+  // Duplicate of Point2I.upgrade();
+  public Point2D toPoint2D() {return new Point2D(x,y);}
+  public Point2D d() {return toPoint2D();}
+
   /**
    * Creates a new object of the same class and with the
    * same contents as this object.
