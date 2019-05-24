@@ -188,14 +188,7 @@ public class Point2D implements Serializable, Cloneable
    */
   public Object clone()
   {
-    try
-    {
-      return super.clone();
-    } catch (CloneNotSupportedException e)
-    {
-      // this shouldn't happen, since we are Cloneable
-      throw new InternalError(e);
-    }
+    return new Point2D(x, y);
   }
 
   /**
@@ -211,10 +204,10 @@ public class Point2D implements Serializable, Cloneable
    */
   public boolean equals(Object obj)
   {
-    if (obj instanceof Point3D)
+    if (obj instanceof Point2D)
     {
-      Point3D p3i = (Point3D) obj;
-      return (getX() == p3i.getX()) && (getY() == p3i.getY());
+      Point2D p2d = (Point2D) obj;
+      return (getX() == p2d.getX()) && (getY() == p2d.getY());
     }
     return super.equals(obj);
   }

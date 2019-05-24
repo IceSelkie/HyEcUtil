@@ -191,14 +191,7 @@ public class Point3I implements Serializable, Cloneable
    */
   public Object clone()
   {
-    try
-    {
-      return super.clone();
-    } catch (CloneNotSupportedException e)
-    {
-      // this shouldn't happen, since we are Cloneable
-      throw new InternalError(e);
-    }
+    return new Point3I(x, y, z);
   }
 
   /**

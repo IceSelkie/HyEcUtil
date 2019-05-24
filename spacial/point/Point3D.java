@@ -193,14 +193,7 @@ public class Point3D implements Serializable, Cloneable
    */
   public Object clone()
   {
-    try
-    {
-      return super.clone();
-    } catch (CloneNotSupportedException e)
-    {
-      // this shouldn't happen, since we are Cloneable
-      throw new InternalError(e);
-    }
+    return new Point3D(x, y, z);
   }
 
   /**
@@ -218,8 +211,8 @@ public class Point3D implements Serializable, Cloneable
   {
     if (obj instanceof Point3D)
     {
-      Point3D p3i = (Point3D) obj;
-      return (getX() == p3i.getX()) && (getY() == p3i.getY()) && (getZ() == p3i.getZ());
+      Point3D p3d = (Point3D) obj;
+      return (getX() == p3d.getX()) && (getY() == p3d.getY()) && (getZ() == p3d.getZ());
     }
     return super.equals(obj);
   }
