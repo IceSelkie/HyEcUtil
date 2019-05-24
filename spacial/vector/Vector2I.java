@@ -133,6 +133,9 @@ public class Vector2I
     return (x2 - x1) * (y2 - y1);
   }
 
+  public int width() {return Math.abs(x2-x1);}
+  public int height() {return Math.abs(x2-x1);}
+
   public boolean within(Point2I loc)
   {
     return ((loc.x >= x1 && loc.x <= x2) || (loc.x >= x2 && loc.x <= x1)) && ((loc.y >= y1 && loc.y <= y2) || (loc.y >= y2 && loc.y <= y1));
