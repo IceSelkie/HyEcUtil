@@ -147,4 +147,47 @@ public class Vector2D
   {
     return new Vector2D(x1, y1, x2, y2);
   }
+
+  public double swzlp_x1() {return x1;}
+  public double swzlp_x2() {return x2;}
+  public double swzlp_y1() {return y1;}
+  public double swzlp_y2() {return y2;}
+  public double[] swzla_x1() {return new double[]{x1};}
+  public double[] swzla_x2() {return new double[]{x2};}
+  public double[] swzla_y1() {return new double[]{y1};}
+  public double[] swzla_y2() {return new double[]{y2};}
+
+  public Point2D swzlp_x1_x1() {return new Point2D(x1,x1);}
+  public Point2D swzlp_x1_x2() {return new Point2D(x1,x2);}
+  public Point2D swzlp_x1_y1() {return new Point2D(x1,y1);}
+  public Point2D swzlp_x1_y2() {return new Point2D(x1,y2);}
+  public Point2D swzlp_x2_x1() {return new Point2D(x2,x1);}
+  public Point2D swzlp_x2_x2() {return new Point2D(x2,x2);}
+  public Point2D swzlp_x2_y1() {return new Point2D(x2,y1);}
+  public Point2D swzlp_x2_y2() {return new Point2D(x2,y2);}
+  public Point2D swzlp_y1_x1() {return new Point2D(y1,x1);}
+  public Point2D swzlp_y1_x2() {return new Point2D(y1,x2);}
+  public Point2D swzlp_y1_y1() {return new Point2D(y1,y1);}
+  public Point2D swzlp_y1_y2() {return new Point2D(y1,y2);}
+  public Point2D swzlp_y2_x1() {return new Point2D(y2,x1);}
+  public Point2D swzlp_y2_x2() {return new Point2D(y2,x2);}
+  public Point2D swzlp_y2_y1() {return new Point2D(y2,y1);}
+  public Point2D swzlp_y2_y2() {return new Point2D(y2,y2);}
+
+  public double[] swzla_x1_x1() {return new double[]{x1,x1};}
+  public double[] swzla_x1_x2() {return new double[]{x1,x2};}
+  public double[] swzla_x1_y1() {return new double[]{x1,y1};}
+  public double[] swzla_x1_y2() {return new double[]{x1,y2};}
+  public double[] swzla_x2_x1() {return new double[]{x2,x1};}
+  public double[] swzla_x2_x2() {return new double[]{x2,x2};}
+  public double[] swzla_x2_y1() {return new double[]{x2,y1};}
+  public double[] swzla_x2_y2() {return new double[]{x2,y2};}
+  public double[] swzla_y1_x1() {return new double[]{y1,x1};}
+  public double[] swzla_y1_x2() {return new double[]{y1,x2};}
+  public double[] swzla_y1_y1() {return new double[]{y1,y1};}
+  public double[] swzla_y1_y2() {return new double[]{y1,y2};}
+  public double[] swzla_y2_x1() {return new double[]{y2,x1};}
+  public double[] swzla_y2_x2() {return new double[]{y2,x2};}
+  public double[] swzla_y2_y1() {return new double[]{y2,y1};}
+  public double[] swzla_y2_y2() {return new double[]{y2,y2};}
 }

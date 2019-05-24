@@ -145,4 +145,47 @@ public class Vector2I
   {
     return new Vector2I(x1, y1, x2, y2);
   }
+
+  public int swzlp_x1() {return x1;}
+  public int swzlp_x2() {return x2;}
+  public int swzlp_y1() {return y1;}
+  public int swzlp_y2() {return y2;}
+  public int[] swzla_x1() {return new int[]{x1};}
+  public int[] swzla_x2() {return new int[]{x2};}
+  public int[] swzla_y1() {return new int[]{y1};}
+  public int[] swzla_y2() {return new int[]{y2};}
+
+  public Point2I swzlp_x1_x1() {return new Point2I(x1,x1);}
+  public Point2I swzlp_x1_x2() {return new Point2I(x1,x2);}
+  public Point2I swzlp_x1_y1() {return new Point2I(x1,y1);}
+  public Point2I swzlp_x1_y2() {return new Point2I(x1,y2);}
+  public Point2I swzlp_x2_x1() {return new Point2I(x2,x1);}
+  public Point2I swzlp_x2_x2() {return new Point2I(x2,x2);}
+  public Point2I swzlp_x2_y1() {return new Point2I(x2,y1);}
+  public Point2I swzlp_x2_y2() {return new Point2I(x2,y2);}
+  public Point2I swzlp_y1_x1() {return new Point2I(y1,x1);}
+  public Point2I swzlp_y1_x2() {return new Point2I(y1,x2);}
+  public Point2I swzlp_y1_y1() {return new Point2I(y1,y1);}
+  public Point2I swzlp_y1_y2() {return new Point2I(y1,y2);}
+  public Point2I swzlp_y2_x1() {return new Point2I(y2,x1);}
+  public Point2I swzlp_y2_x2() {return new Point2I(y2,x2);}
+  public Point2I swzlp_y2_y1() {return new Point2I(y2,y1);}
+  public Point2I swzlp_y2_y2() {return new Point2I(y2,y2);}
+
+  public int[] swzla_x1_x1() {return new int[]{x1,x1};}
+  public int[] swzla_x1_x2() {return new int[]{x1,x2};}
+  public int[] swzla_x1_y1() {return new int[]{x1,y1};}
+  public int[] swzla_x1_y2() {return new int[]{x1,y2};}
+  public int[] swzla_x2_x1() {return new int[]{x2,x1};}
+  public int[] swzla_x2_x2() {return new int[]{x2,x2};}
+  public int[] swzla_x2_y1() {return new int[]{x2,y1};}
+  public int[] swzla_x2_y2() {return new int[]{x2,y2};}
+  public int[] swzla_y1_x1() {return new int[]{y1,x1};}
+  public int[] swzla_y1_x2() {return new int[]{y1,x2};}
+  public int[] swzla_y1_y1() {return new int[]{y1,y1};}
+  public int[] swzla_y1_y2() {return new int[]{y1,y2};}
+  public int[] swzla_y2_x1() {return new int[]{y2,x1};}
+  public int[] swzla_y2_x2() {return new int[]{y2,x2};}
+  public int[] swzla_y2_y1() {return new int[]{y2,y1};}
+  public int[] swzla_y2_y2() {return new int[]{y2,y2};}
 }
