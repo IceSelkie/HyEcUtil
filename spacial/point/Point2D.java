@@ -1,5 +1,7 @@
 package hyec.util.spacial.point;
 
+import hyec.util.spacial.vector.Vector2D;
+
 import java.io.Serializable;
 
 /**
@@ -177,6 +179,22 @@ public class Point2D implements Serializable, Cloneable
   {
     double mag = Math.sqrt(x*x+y*y);
     return new Point2D(x/mag,y/mag);
+  }
+
+  /**
+   * Scale the point by a scalar.
+   */
+  public Point2D scale(double scale)
+  {
+    return new Point2D(x*scale,y*scale);
+  }
+
+  /**
+   * Converts this point into a vector from 0,0 to the point's position.
+   */
+  public Vector2D asVec()
+  {
+    return new Vector2D(this);
   }
 
   /**

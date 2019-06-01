@@ -1,5 +1,7 @@
 package hyec.util.spacial.point;
 
+import hyec.util.spacial.vector.Vector2I;
+
 import java.io.Serializable;
 
 /**
@@ -188,6 +190,36 @@ public class Point2I implements Serializable, Cloneable
   // Duplicate of Point2I.upgrade();
   public Point2D toPoint2D() {return new Point2D(x,y);}
   public Point2D d() {return toPoint2D();}
+
+  /**
+   * Scale the point by a scalar.
+   */
+  public Point2I scaleUp(int scale)
+  {
+    return new Point2I(x*scale,y*scale);
+  }
+  /**
+   * Scale the point by a scalar.
+   */
+  public Point2I scaleDown(int reduce)
+  {
+    return new Point2I(x/reduce,y/reduce);
+  }
+  /**
+   * Scale the point by a scalar.
+   */
+  public Point2I scale(int up, int down)
+  {
+    return new Point2I((x*up)/down,(y*up)/down);
+  }
+
+  /**
+   * Converts this point into a vector from 0,0 to the point's position.
+   */
+  public Vector2I asVec()
+  {
+    return new Vector2I(this);
+  }
 
   /**
    * Creates a new object of the same class and with the

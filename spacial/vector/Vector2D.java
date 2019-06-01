@@ -14,20 +14,20 @@ public class Vector2D
     this.y2 = y2;
   }
 
-  public Vector2D(Point2D p1)
+  public Vector2D(Point2D p2)
   {
-    this.x1 = p1.x;
-    this.y1 = p1.y;
-    this.x2 = p1.x;
-    this.y2 = p1.y;
+    this.x1 = 0;
+    this.y1 = 0;
+    this.x2 = p2.x;
+    this.y2 = p2.y;
   }
 
-  public Vector2D(double x1, double y1)
+  public Vector2D(double x2, double y2)
   {
-    this.x1 = x1;
-    this.y1 = y1;
-    this.x2 = x1;
-    this.y2 = y1;
+    this.x1 = 0;
+    this.y1 = 0;
+    this.x2 = x2;
+    this.y2 = y2;
   }
 
   public Vector2D(Point2D p1, double x2, double y2)
